@@ -54,6 +54,29 @@ $this->load->view('calculadora',$datos);
 }
 
 
+
+public function multiplicar($numero1,$numero2){
+
+$datos = array();
+
+$resultado;
+$resultado = $numero1 * $numero2;
+
+
+$datos['resultado']= $resultado;
+$datos['nombre']='ramon';
+$datos['apellido']='ojeda';
+$datos['edad']=40;
+
+$this->load->view('calculadora',$datos);
+
+
+
+}
+
+
+
+
 }
 
 ?>
